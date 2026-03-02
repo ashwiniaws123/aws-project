@@ -5,7 +5,7 @@ on:
   #   branches: [ ashwini ]
   push:
     branches: [ ashwini ]
-  workflow_dispatch: {}
+  workflow_dispatch: 
 
 jobs:
   terraform:
