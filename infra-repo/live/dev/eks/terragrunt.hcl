@@ -1,3 +1,5 @@
+
+
 include {
   path = find_in_parent_folders()
 }
@@ -12,5 +14,5 @@ terraform {
 
 inputs = {
   vpc_id          = dependency.vpc.outputs.vpc_id
-  private_subnets = dependency.vpc.outputs.private_subnets
+  subnet_ids = dependency.vpc.outputs.private_subnets
 }

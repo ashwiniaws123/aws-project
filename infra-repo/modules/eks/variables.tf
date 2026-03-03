@@ -1,2 +1,7 @@
-variable "vpc_id" {}
-variable "private_subnets" {}
+variable "vpc_id" {
+  type = string
+}
+
+variable "subnet_ids" {
+  type = list(string)
+}
